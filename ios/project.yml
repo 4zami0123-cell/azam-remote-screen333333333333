@@ -1,0 +1,38 @@
+name: AzamShare
+options:
+  bundleIdPrefix: com.azam
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  AzamShare:
+    type: application
+    platform: iOS
+    sources: [AzamShare]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.azam.share
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        DEVELOPMENT_TEAM: ""
+    info:
+      path: AzamShare/Info.plist
+      properties:
+        CFBundleDisplayName: Azam Share
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        NSCameraUsageDescription: "عشان تصوّر كود الربط من شاشة الكمبيوتر"
+        NSLocalNetworkUsageDescription: "عشان يتصل التطبيق بالكمبيوتر حقك على الشبكة"
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+          NSAllowsLocalNetworking: true
+        UILaunchScreen: {}
+        UIUserInterfaceStyle: Dark
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight

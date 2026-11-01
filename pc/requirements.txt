@@ -1,0 +1,6 @@
+mss==9.0.2
+Pillow>=10.4
+websockets>=13.1
+qrcode==7.4.2
+psutil>=6.0
+pyinstaller>=6.10
